@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h3>Cadastro da liga dos astronautas</h3>
+    <form>
+        <label for="iname">Nome: </label>
+        <input type="text" name="name" id="iname"> <br>
+        <p>
+            <label for="iemail">E-mail: </label>
+            <input type="email" name="email" id="iemail">
+            <label for="ipass">- Password: </label>
+            <input type="password" name="pass" id="ipass">
+        </p>
+        <p>
+            <label for="data">Data de nascimento: </label>
+            <input type="data" name="data" id="idata">
+            <label for="ifoto">- Foto:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <label for="inac">Nacionalidade: </label>
+            <select name="nac" id="inac">
+                <option value="amaerican">Americano</option>
+                <option value="russian">Russo</option>
+                <option value="brazilian">Brasileiro</option>
+            </select>
+             - Genero:
+            <label for="female">F</label>
+            <input type="radio" name="gender" id="female">
+            <label for="male">M</label>
+            <input type="radio" name="gender" id="male">
+        </p>
+        <p>
+            Suas principais qualidades: <br>
+            <label for="iint">Inteligência: </label>
+            <input type="checkbox" name="int" id="iint">
+            <label for="ires">| Resilência: </label>
+            <input type="checkbox" name="res" id="ires">
+            <label for="ipre">| Preparo fisico: </label>
+            <input type="checkbox" name="pre" id="ipre">
+            <label for="iedu">| Educação: </label>
+            <input type="checkbox" name="edu" id="iedu">
+        </p>
+        <p>
+            <textarea name="why" id="iwhy" cols="30" rows="10" placeholder="Porque você gostaria de ser um astronauta?"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Criar">
+        </p>
+    </form>
+</body>
+</html>

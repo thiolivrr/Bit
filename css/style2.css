@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.post-container {
+    background-color: #fffafa;
+    width: 60vw;
+    margin: auto;
+    padding: 50px;
+}
+
+h1 {
+    font-family: 'Montserrat';
+}
+
+.date {
+    color: #008080;
+    font-family: 'Roboto';
+}
+
+.post-content {
+    font-family: 'Open Sans';
+}
