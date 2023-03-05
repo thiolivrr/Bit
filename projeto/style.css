@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'century gothic';
+}
+
+header, footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    height: 100px;
+    background-color: #121212;  
+}
+
+header img, footer img {
+    width: 280px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 0px 25px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.introduction {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.introduction h1 {
+    text-transform: uppercase;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    gap: 15px;
+    padding: 10px;
+}
+
+.main img {
+    height: 200px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.main p {
+    width: 250px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.extra:hover {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+aside {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    height: fit-content;
+    background-color: rgb(83, 83, 83);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+aside img {
+    width: 270px;
+    border-radius: 10px;
+}
+
+aside {
+    padding: 20px 50px 20px 50px;
+}
+
+aside h2 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.boxe:hover {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 888px) {
+    .main {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    header, footer {
+        justify-content: center;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+    
+
+
+
+

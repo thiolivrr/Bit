@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-rock {
+    width: 40px;
+}
+
+.logo-onebitcode {
+    width: 200px;
+}
+
+header {
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 25px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+header a {
+    padding: 10px;
+    color: white;
+    font-family: 'century gothic';
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+a:hover {
+    border-color: #ff0044;
+    transition: 0.4s;
+}
