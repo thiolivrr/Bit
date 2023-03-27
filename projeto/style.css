@@ -14,7 +14,8 @@ footer {
   align-items: center;
   padding: 10px 30px 10px 30px;
   height: 100px;
-  background-color: #121212;
+  background-color: #292929;
+  gap: 10px 20px;
 }
 
 header img,
@@ -32,12 +33,13 @@ header a,
 footer a {
   color: white;
   text-decoration: none;
+  padding-bottom: 10px;
+  transition: 0.5s;
 }
 
 header a:hover {
-  text-decoration: 2px underline;
-  transition: all 2s ease-out;
-  text-underline-offset: 20px;
+  border-bottom: 2px solid black;
+  transition: fill 0.3s ease-in-out, color 0.2s ease-in-out;
 }
 
 .introduction {
@@ -59,7 +61,7 @@ header a:hover {
 }
 
 .main img {
-  height: 200px;
+  height: 180px;
   width: 280px;
   border-radius: 10px;
 }
@@ -75,11 +77,15 @@ header a:hover {
   justify-content: space-around;
 }
 
+.extra {
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
 .extra:hover {
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 10px;
-  margin-bottom: 10px;
-  transition: all 0.2s ease-out;
+  transition: fill 0.3s ease-in-out, color 0.2s ease-in-out;
 }
 
 aside {
@@ -109,19 +115,28 @@ aside h2 {
   margin-bottom: 10px;
 }
 
+.esporte {
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.esporte h2, p {
+  padding: 6px;
+  text-align: center;
+}
+
 .esporte:hover {
   border: 2px solid black;
   border-radius: 10px;
-  transition: all 0.2s ease-out;
 }
 
-@media screen and (max-width: 888px) {
+@media screen and (max-width: 918px) {
   .main {
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 563px) {
   header,
   footer {
     justify-content: center;
