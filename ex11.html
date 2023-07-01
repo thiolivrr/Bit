@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            display: flex;
+            justify-content: center;
+            font-family: 'century gothic';
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div {
+
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: fit-content;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #divescalar {
+            background-color: lightblue;
+        }
+
+        #divremover {
+            background-color: lightgreen;
+        }
+
+        button {
+            margin: 10px;
+            border-radius: 10px;
+            padding: 5px;
+            border: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Escalação de time</h1>
+    <div id="divescalar">
+        <li>
+            <label for="positon">Posição: </label>
+            <input type="text" name="positon" id="positon"> <br>
+        </li>
+        <br>
+        <li>
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name"> <br>
+        </li>
+        <br>
+        <li>
+            <label for="shirt">Número da Camisa: </label>
+            <input type="number" name="shirt" id="shirt"> <br>
+        </li>
+
+        <button onclick="Escalar()">Escalar</button>
+    </div>
+    <div id="divremover">
+        <li>
+            <label for="remnum">Número da Camisa: </label>
+            <input type="number" name="remnum" id="remnum">
+        </li>
+
+        <button onclick="Remover()">Remover</button>
+    </div>
+    <div id="show"></div>
+</body>
+<script src="ex11.js"></script>
+
+</html>

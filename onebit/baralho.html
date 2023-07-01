@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baralho</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let cartas = ['Rei','Rainha','Bispo','Peão','Cavalo']
+    do {
+        let escolha = prompt(`As cartas atuais são ${cartas}\na) Adicionar uma carta\nb) Puxar uma carta\nc) Sair`)
+        if (escolha === "a") {
+            let nova = prompt('Qual será o nome da nova carta?')
+            cartas.push(nova)
+            alert(cartas)
+        } else if (escolha === "b") {
+            let puxou = cartas.shift()
+            alert(`Você puxou ${puxou}`)
+        }
+        choice = escolha
+    } while (choice != "c")
+</script>
+</html>

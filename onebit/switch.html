@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let metro = parseFloat(prompt('Digite um valor em metros:'))
+    let medida = prompt('Você deseja converter para qual medida?\na) milímetro (mm)\nb) centímetro (cm)\nc) decímetro (dm)\nd) decâmetro (dam)\ne) hectômetro (hm)\nf) quilômetro (km) ')
+    switch (medida) {
+        case "a":
+            alert(`${metro * 1000} milímetros`)
+            break
+        case "b":
+            alert(`${metro * 100} centímetros`)
+            break
+        case "c":
+            alert(`${metro * 10} decímetros`)
+            break
+        case "d":
+            alert(`${metro / 10} decâmetros`)
+            break
+        case "e":
+            alert(`${metro / 100} hectômetros`)
+            break
+        case "f":
+            alert(`${metro / 1000} quilômetro`)
+            break
+        default:
+            window.alert('Digite uma letra!')
+    }
+</script>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damage</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let warrior = prompt('What is the warrior name?')
+    let attack = Number(prompt('How much damage can he do? How powerful is he supposed to be?'))
+    let knight = prompt('How do you call the knight?')
+    let life = Number(prompt('How much damage can he take and still persist?'))
+    let defense = Number(prompt('How much is he supposed to block?'))
+    let shield = confirm('Does he have a weapon to block incoming attacks?')
+    let withshield = attack - defense / 2
+    let done = attack - defense
+    alert(
+        `Let this duel begin!`
+    )
+    if (attack > defense && shield === false) {
+        alert(
+            `${done} damage has been dealt`
+        )
+    } else if (attack > defense && shield === true) {
+        alert(
+            `${withshield} damage has been dealt`
+        )
+    } else if (attack <= defense) {
+        alert(
+            `It's not possible to deal damage, knight is too tough`
+        )
+    }
+</script>
+
+</html>

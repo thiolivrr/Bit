@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let pacientes = ['Camila', 'Marcos', 'Daniela']
+    do {
+        let pessoa = ""
+        let escolha = prompt(`A fila atual é: ${pacientes}\nEscolha uma das opções abaixo:\na) Novo Paciente\nb) Consultar Paciente\nc) Sair`)
+        for (i = 0; i < pacientes.length; i++) {
+            
+        }
+        choice = escolha
+        if (escolha === "a") {
+            let novo = prompt('Qual será o nome do novo paciente?')
+            pacientes.push(novo)
+            alert(pacientes)
+        } else if (escolha === "b") {
+            let consulta = pacientes.shift()
+            alert(`${consulta} foi atendido`)
+            alert(pacientes)
+        }
+    } while (choice != "c")
+</script>
+
+</html>
